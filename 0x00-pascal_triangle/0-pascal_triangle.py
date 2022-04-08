@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def pascal_triangle(n):
     row = [1]
     y = [0]
