@@ -5,7 +5,7 @@
 
 """
 
-pascal_triangle = __import__('0-pascal_triangle').pascal_triangle
+pascal_triangle = __import__('0-pascal_triangle.py').pascal_triangle
 
 def print_triangle(triangle):
         """
