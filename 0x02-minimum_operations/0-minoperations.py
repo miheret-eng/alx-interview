@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Minimum Operations python3 challenge'''
 
+
 def minOperations(n):
     '''calculates the fewest number of
     operations needed to result in exactly n H
@@ -11,13 +12,13 @@ def minOperations(n):
     pasted_chars = 1  # how many chars in the file
     clipboard = 0  # how many H's copied
     counter = 0  # operations counter
-    
+
     while pasted_chars < n:
         # if did not copy anything yet
         if clipboard == 0:
             # copyall
             clipboard = pasted_chars
-            # increment operations counter            
+            # increment operations counter
             counter += 1
 
         # if haven't pasted anything yet
@@ -26,7 +27,7 @@ def minOperations(n):
             pasted_chars += clipboard
             # increment operations counter
             counter += 1
-            # continue to next loop            
+            # continue to next loop
             continue
 
         remaining = n - pasted_chars  # remaining chars to Paste
